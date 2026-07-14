@@ -441,8 +441,19 @@
 @media (max-width: 600px) {
   .footer {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 24px;
+    padding: 32px 24px;
+  }
+  
+  .footer-left {
+    align-items: center;
+  }
+
+  .footer-copy {
+    position: static;
+    transform: none;
+    margin-top: 16px;
   }
 }
 
@@ -462,19 +473,24 @@
 @media (max-width: 768px) {
   .navbar {
     padding: 0 24px;
+    height: 72px;
+  }
+
+  .navbar-logo-img {
+    height: 44px;
   }
 
   .navbar-links {
-    gap: 22px;
-  }
-
-  .hero-section {
-    padding: 100px 24px 60px;
+    gap: 16px;
   }
 
   .section,
   .contact-section {
     padding: 60px 24px;
+  }
+
+  .section.gallery-page {
+    padding-top: 100px;
   }
 
   .masonry-grid {
@@ -487,7 +503,12 @@
     columns: 1;
   }
 
-  .contact-card {
-    padding: 36px 24px;
+  .contact-socials {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .contact-dot {
+    display: none;
   }
 }
